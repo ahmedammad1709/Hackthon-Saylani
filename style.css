@@ -17,6 +17,7 @@ body.night-mode {
 
 nav {
     background-color: white;
+    background-color: #edeaff;
 }
 
 nav.night-mode {
@@ -353,4 +354,48 @@ footer .footerBottom {
     display: flex;
     font-size: 16px;
     line-height: 1.5;
+}
+
+/* --------------page6------------------ */
+
+.page6 {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 40px;
+}
+
+.page6 .cards {
+    width: 100%;
+    display: flex;
+    gap: 20px;
+}
+
+.page6 .cards .card {
+    background-color: white;
+    border-radius: 10px;
+    line-height: 1.5;
+    padding-bottom: 20px;
+}
+
+.page6 h4 {
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.page6 h6 {
+    color: #6851FF;
+    font-size: 20px;
+    margin-left: 10px;
+}
+
+.page6 p {
+    font-size: 14px;
+    line-height: 1.4;
+    margin-left: 10px;
+}
+
+.page6 .cards img {
+    width: 100%;
 }

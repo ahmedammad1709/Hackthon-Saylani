@@ -250,7 +250,8 @@
         // const cards = document.getElementsByClassName("whiteBox");
 
         function switchToNight() {
-            // document.body.classList.add("night-mode");
+            document.body.classList.add("night-mode");
+            document.getElementById("navbar").classList.add("night-mode")
             document.getElementById("dayBtn").style.display = "none";
             document.getElementById("nightBtn").style.display = "inline";
 
@@ -263,7 +264,8 @@
         }
 
         function switchToDay() {
-            // document.body.classList.remove("night-mode");
+            document.getElementById("navbar").classList.remove("night-mode")
+            document.body.classList.remove("night-mode");
             document.getElementById("dayBtn").style.display = "inline";
             document.getElementById("nightBtn").style.display = "none";
 

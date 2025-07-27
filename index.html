@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hackathone</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <nav id="navbar">
+        <ul>
+            <li>
+                <div id="logo"><img src="Assets/logo.png" alt="logo"></div>
+            </li>
+            <li class="navLinks">About Us </li>
+            <li class="navLinks">Jobs</li>
+            <li class="navLinks">Mentorship</li>
+            <li class="navLinks">Practice</li>
+            <li class="navLinks">Login</li>
+            <li class="navLinks">Join Now</li>
+            <li id="anokha" class="navLinks">Business</li>
+            <li>
+                <div class="toggle-buttons">
+                    <img src="Assets/LightTheme.png" id="dayBtn" onclick="switchToNight()" alt="Day Mode" />
+                    <img src="Assets/darkTheme.png" id="nightBtn" onclick="switchToDay()" alt="Night Mode"
+                        style="display: none;" />
+                </div>
+            </li>
+        </ul>
+    </nav>
+
+    <br><br><br><br>
+
+
+
+
+
+    <!-- ---------------Footer------------------------ -->
+
+    <footer>
+
+        <div class="footerHead">
+            <div class="leftText">
+                <img src="Assets/logoForFotter.png" alt="">
+                <p>
+                    Built with ❤️ by Ammad Ahmed (HiringMine-Clone). <br>
+
+                    HiringMine bridges top talent and visionary companies through a smart, streamlined platform.
+                    Empowering candidates to shine, and employers to hire better — faster. Your next opportunity,
+                    powered by technology and trust.
+                </p>
+
+                <div class="iconsDiv">
+                    <h2>Follow us</h2>
+                    <div class="social-icons">
+                        <i class="fab fa-facebook-f"></i>
+                        <i class="fab fa-instagram"></i>
+                        <i class="fab fa-linkedin-in"></i>
+                    </div>
+                </div>
+            </div>
+
+            <div class="rightText">
+                <h2>Contact Us</h2>
+                <p>ahmedammad2006@gmail.com</p>
+                <p>Life at HiringMine</p>
+                <p>About HiringMine</p>
+                <img src="MyLogo.png" alt="">
+            </div>
+        </div>
+
+        <hr>
+        <div class="footerBottom">
+            <p>Privacy Policy | Terms and Conditions</p>
+            <p>Copyright Hiringmine 2025. All Rights Reserved</p>
+        </div>
+
+    </footer>
+
+
+    <script>
+
+        const cards = document.getElementsByClassName("card");
+
+        function switchToNight() {
+            document.body.classList.add("night-mode");
+            document.getElementById("mainDiv").classList.add("night-mode");
+            document.getElementById("navbar").classList.add("night-mode");
+            document.getElementById("pageTwo").classList.add("night-mode");
+            document.getElementById("dayBtn").style.display = "none";
+            document.getElementById("nightBtn").style.display = "inline";
+            for (let i = 0; i < cards.length; i++) {
+                cards[i].classList.add("night-mode");
+            }
+        }
+
+        function switchToDay() {
+            document.body.classList.remove("night-mode");
+            document.getElementById("mainDiv").classList.remove("night-mode");
+            document.getElementById("navbar").classList.remove("night-mode");
+            document.getElementById("pageTwo").classList.remove("night-mode");
+            document.getElementById("dayBtn").style.display = "inline";
+            document.getElementById("nightBtn").style.display = "none";
+            for (let i = 0; i < cards.length; i++) {
+                cards[i].classList.remove("night-mode");
+            }
+
+        }
+
+        function updatePlaceholder() {
+            const input = document.getElementById("homeinput");
+
+            if (window.innerWidth <= 600) {
+                input.placeholder = "Search here ..";
+            }
+            else {
+                input.placeholder = "Search by Role or Keyword";
+            }
+        }
+
+        window.addEventListener("load", updatePlaceholder());
+        window.addEventListener("resize", updatePlaceholder());
+    </script>
+
+
+</body>
+
+</html>

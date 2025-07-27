@@ -120,6 +120,7 @@ nav ul li {
 @media (max-width: 770px) {
     .main {
         flex-direction: column;
+        gap: 30px;
     }
 
     .main .left {
@@ -143,10 +144,11 @@ nav ul li {
 .page2 .left {
     padding: 90px;
     border: 1px solid grey;
-    /* box-shadow:; */
-    border-radius: 8px;
+    border-radius: 9px;
     display: flex;
     flex-direction: column;
+    background-color: white;
+    box-shadow: 0 0 35px white;
 }
 
 .page2 h6 {
@@ -279,6 +281,8 @@ footer .footerBottom {
     }
 }
 
+/* ------------page 4--------------- */
+
 .page4 {
     display: flex;
     padding: 35px 40px;
@@ -305,6 +309,14 @@ footer .footerBottom {
     font-family: "Roboto", "Helvetica", "Arial", sans-serif;
     font-weight: 400;
     line-height: 1.5;
+}
+
+@media (max-width: 995px) {
+    .page4 {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
 }
 
 /* ------------page5-------------- */
@@ -347,6 +359,7 @@ footer .footerBottom {
     color: black;
     padding: 2rem;
     border-radius: 12px;
+    box-shadow: 0 0 35px white;
 }
 
 .page5 .right p {
@@ -354,6 +367,18 @@ footer .footerBottom {
     display: flex;
     font-size: 16px;
     line-height: 1.5;
+}
+
+@media (max-width: 750px) {
+    .page5 .right {
+        flex-direction: column;
+        gap: 40px;
+    }
+
+    .page5 .right .mission,
+    .page5 .right .vision {
+        width: 100%;
+    }
 }
 
 /* --------------page6------------------ */
@@ -368,14 +393,14 @@ footer .footerBottom {
 .page6 .cards {
     width: 100%;
     display: flex;
-    gap: 20px;
+    gap: 40px;
 }
 
 .page6 .cards .card {
     background-color: white;
     border-radius: 10px;
     line-height: 1.5;
-    padding-bottom: 20px;
+    padding-bottom: 40px;
 }
 
 .page6 h4 {
@@ -387,17 +412,27 @@ footer .footerBottom {
 .page6 h6 {
     color: #6851FF;
     font-size: 20px;
-    margin-left: 10px;
+    margin-left: 25px;
+    display: flex;
+    margin-top: 20px;
+    margin-bottom: 10px;
 }
 
 .page6 p {
     font-size: 14px;
-    line-height: 1.4;
-    margin-left: 10px;
+    line-height: 1.5;
+    margin-left: 25px;
+    display: flex;
 }
 
 .page6 .cards img {
     width: 100%;
+}
+
+@media (max-width: 750px) {
+    .page6 .cards {
+        flex-direction: column;
+    }
 }
 
 /* -------------contact section------------ */

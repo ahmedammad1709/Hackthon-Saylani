@@ -5,15 +5,30 @@
 }
 
 body {
-    background-color: #edeaff;
+    background: linear-gradient(to bottom,
+            #ffffff 0%,
+            #ffffff 15%,
+            #f6f3ff 30%,
+            #eceaff 55%,
+            #edeaff 70%,
+            #edeaff 100%);
     font-family: Roboto, Helvetica, Arial, sans-serif;
+    color: black;
 }
 
 body.night-mode {
-    background-color: black;
+    background: rgb(27, 27, 27);
     color: white;
     font-family: Roboto, Helvetica, Arial, sans-serif;
 }
+
+
+
+/* .night-mode {
+    background-color: rgb(31, 31, 39) !important;
+    color: #D3D3D3 !important;
+    transition: all 0.3s ease;
+} */
 
 nav {
     background-color: white;
@@ -80,7 +95,6 @@ nav ul li {
 }
 
 
-
 .main h4 {
     font-family: Roboto, Helvetica, Arial, sans-serif;
     font-weight: 400;
@@ -101,7 +115,6 @@ nav ul li {
 
 .main p {
     font-size: 16px;
-    font-family: "Roboto", "Helvetica", "Arial", sans-serif;
     display: flex;
 }
 
@@ -141,19 +154,20 @@ nav ul li {
     padding: 20px 50px;
 }
 
+
+
 .page2 .left {
     padding: 90px;
     border: 1px solid grey;
     border-radius: 9px;
     display: flex;
     flex-direction: column;
-    background-color: white;
-    box-shadow: 0 0 35px white;
+    /* background-color: white; */
+    box-shadow: 0 0 15px white;
 }
 
 .page2 h6 {
     font-size: 2rem;
-    font-family: Roboto, Helvetica, Arial, sans-serif;
     margin-bottom: 15px;
     display: flex;
 }
@@ -161,7 +175,6 @@ nav ul li {
 .page2 h5 {
     color: #6851FF;
     font-size: 2rem;
-    font-family: Roboto, Helvetica, Arial, sans-serif;
     display: flex;
 }
 
@@ -170,7 +183,6 @@ nav ul li {
 }
 
 .page2 .right p {
-    font-family: "Roboto", "Helvetica", "Arial", sans-serif;
     font-weight: 400;
     font-size: 16px;
     line-height: 1.43;
@@ -210,7 +222,7 @@ nav ul li {
 
 /* Feature Grid Section */
 .feature-grid-section {
-    background: #f1edff;
+    /* background: #f1edff; */
     padding: 60px 20px;
     display: flex;
     justify-content: center;
@@ -349,7 +361,7 @@ nav ul li {
     padding: 20px 40px;
     align-items: center;
     justify-content: center;
-    background-color: #edeaff;
+    /* background-color: #edeaff; */
 }
 
 .page5 .left {
@@ -357,7 +369,6 @@ nav ul li {
 }
 
 .page5 .left h4 {
-    font-family: "Roboto", "Helvetica", "Arial", sans-serif;
     font-size: 34px;
 }
 
@@ -369,7 +380,6 @@ nav ul li {
 
 .page5 .right h5 {
     font-size: 24px;
-    font-family: "Roboto", "Helvetica", "Arial", sans-serif;
     color: #6851FF;
     margin-bottom: 20px;
 }
@@ -461,7 +471,7 @@ nav ul li {
 
 /* Contact Section */
 .contact-section {
-    background-color: #f1edff;
+    /* background-color: #f1edff; */
     padding: 80px 20px;
     display: flex;
     justify-content: center;
@@ -615,4 +625,15 @@ footer .footerBottom {
     .footerHead .rightText {
         padding-top: 30px;
     }
+}
+
+.whiteBox {
+    background: white;
+    color: black;
+}
+
+
+.whiteBox.night-mode {
+    background: rgb(41 41 48);
+    color: #D3D3D3;
 }

@@ -399,3 +399,92 @@ footer .footerBottom {
 .page6 .cards img {
     width: 100%;
 }
+
+/* -------------contact section------------ */
+
+/* Contact Section */
+.contact-section {
+    background-color: #f1edff;
+    padding: 80px 20px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-container {
+    background-color: #fff;
+    max-width: 800px;
+    width: 100%;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.05);
+    text-align: center;
+}
+
+.contact-section h4 {
+    font-size: 40px;
+    margin-bottom: 30px;
+}
+
+.contact-section p {
+    font-size: 16px;
+    color: #333;
+    margin-bottom: 30px;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.form-row {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.form-row input {
+    flex: 1;
+    min-width: 45%;
+}
+
+.contact-form input,
+.contact-form textarea {
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 1rem;
+    width: 100%;
+    font-family: inherit;
+}
+
+.contact-form button {
+    width: fit-content;
+    align-self: center;
+    background-color: #6851FF;
+    color: white;
+    padding: 12px 32px;
+    border: none;
+    border-radius: 6px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.contact-form button:hover {
+    background-color: #7a63ff;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+    .form-row {
+        flex-direction: column;
+    }
+
+    .form-row input {
+        min-width: 100%;
+    }
+}
